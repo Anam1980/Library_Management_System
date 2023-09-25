@@ -1,0 +1,7 @@
+package com.example.library_management_system.Enum;
+
+public enum Gender {
+    MALE,
+    FEMALE,
+    OTHER
+}
