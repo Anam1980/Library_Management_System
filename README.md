@@ -17,6 +17,7 @@ Welcome to my Library Management System repository! This project is a comprehens
 - Java Development Kit (JDK)
 - IntelliJ 
 - Apache Maven
+- PostMan
 - MySQL Database
 - PostgreSQL Database
 - SMTP Server (for email notifications)
