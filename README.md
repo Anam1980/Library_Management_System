@@ -1,6 +1,6 @@
 # Library Management System 
 
-Welcome to our Library Management System repository! This project is a comprehensive system developed using Java, Spring Boot, Hibernate JPA, and other technologies to efficiently manage library operations. The system allows users to borrow books, manage authors and library cards, and facilitates smooth transactions. The highlight of this system is the integration of automated email notifications for book issuance, enhancing user communication and satisfaction.
+Welcome to my Library Management System repository! This project is a comprehensive system developed using Java, Spring Boot, Hibernate JPA, and other technologies to efficiently manage library operations. The system allows users to borrow books, manage authors and library cards, and facilitates smooth transactions. The highlight of this system is the integration of automated email notifications for book issuance, enhancing user communication and satisfaction.
 
 ## Features
 
@@ -15,12 +15,16 @@ Welcome to our Library Management System repository! This project is a comprehen
 ### Prerequisites
 
 - Java Development Kit (JDK)
-- IntelliJ or any preferred IDE
+- IntelliJ 
 - Apache Maven
+- MySQL Database
 - PostgreSQL Database
 - SMTP Server (for email notifications)
 - Tomcat Server
 - DBeaver
+- Restful API's
+- SpringBoot
+- Hibernate JPA
 
 ### Setup Instructions
 
@@ -31,7 +35,7 @@ Welcome to our Library Management System repository! This project is a comprehen
 
 ## Automated Email Notifications
 
-Our system includes an automated email notification feature that sends personalized emails to users upon successful book issuance. These emails contain details such as book title, author, due date, and library contact information, ensuring a seamless user experience.
+The system includes an automated email notification feature that sends personalized emails to users upon successful book issuance. These emails contain details such as book title, author, due date, and library contact information, ensuring a seamless user experience.
 
 To enable automated email notifications, configure the SMTP server settings in `application.properties` and ensure that the email templates are appropriately formatted in the code.
 
@@ -42,6 +46,6 @@ To enable automated email notifications, configure the SMTP server settings in `
 
 ## Contributing
 
-We welcome contributions from the community! 
+I welcome contributions from the community! 
 
 
