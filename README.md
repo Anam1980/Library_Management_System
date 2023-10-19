@@ -37,8 +37,8 @@ To enable automated email notifications, configure the SMTP server settings in `
 
 ## Screenshots
 
-![Screenshot 1](/path/to/screenshot1.png)
-![Screenshot 2](/path/to/screenshot2.png)
+![ER Diagram of lms](https://github.com/Anam1980/Library_Management_System/blob/master/Screenshot%202023-10-01%20200820.png)
+
 
 ## Contributing
 
