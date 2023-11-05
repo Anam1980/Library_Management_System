@@ -12,7 +12,7 @@ import lombok.experimental.FieldDefaults;
 @Getter
 @Entity
 @Builder
-@Table(name = "student_info")
+@Table(name = "Students")
 public class Student {
 
     @Id

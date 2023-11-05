@@ -6,7 +6,7 @@ import org.springframework.context.annotation.ComponentScan;
 import org.springframework.stereotype.Component;
 
 @SpringBootApplication
-@ComponentScan(basePackages = "com.example.library_management_system")
+
 public class LibraryManagementSystemApplication {
 
 	public static void main(String[] args) {

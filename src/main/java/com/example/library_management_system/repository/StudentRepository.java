@@ -11,8 +11,8 @@ import java.util.Optional;
 @Repository
 public interface StudentRepository extends JpaRepository<Student, Integer> {
 
-    Optional<Student> findById(int regNo);
     List<Student> findByGender(Gender gender);
+
 
     Student findByEmail(String email);
 

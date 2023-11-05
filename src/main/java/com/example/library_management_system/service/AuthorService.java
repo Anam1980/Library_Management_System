@@ -1,17 +1,14 @@
 package com.example.library_management_system.service;
 
-import com.example.library_management_system.model.Author;
-import com.example.library_management_system.repository.AuthorRepository;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;
+import com.example.library_management_system.dto.request.AuthorRequest;
+import com.example.library_management_system.dto.response.AuthorResponse;
+import com.example.library_management_system.model.Book;
 
-@Service
-public class AuthorService {
-    @Autowired
-    AuthorRepository authorRepository;
+import java.util.List;
 
-    public String addAuthor(Author author){
-        Author saveAuthor = authorRepository.save(author);
-        return  "Author successfully added!!!";
-    }
+public interface AuthorService {
+    public AuthorResponse addAuthor(AuthorRequest authorRequest);
+    public AuthorResponse updateEmail(int regNo, String newEmail) throws Exception;
+    List<String> getAuthorHavingMorethanBooks(int noOfBooks);
+    List<String> getAuthorBooks(AuthorRequest authorRequest);
 }

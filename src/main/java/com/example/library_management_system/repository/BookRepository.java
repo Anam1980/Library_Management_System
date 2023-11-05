@@ -4,6 +4,7 @@ import com.example.library_management_system.Enum.Genre;
 import com.example.library_management_system.model.Book;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
+import org.springframework.data.repository.query.Param;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;
@@ -17,5 +18,8 @@ public interface BookRepository extends JpaRepository<Book, Integer> {
 
     @Query(value = "select b from Book b where b.genre = :genre and b.cost > :cost")
     List<Book> getBooksByGenreAndCostGreaterThanHQL(Genre genre, double cost);
+
+    @Query(value = "select b from Book b where b.genre = :genre1")
+    List<Book> findByGenre(@Param("genre1") Genre genre);
 }
 

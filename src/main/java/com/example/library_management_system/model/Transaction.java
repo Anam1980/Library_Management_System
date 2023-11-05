@@ -1,6 +1,6 @@
 package com.example.library_management_system.model;
 
-import com.example.library_management_system.Enum.TransationStatus;
+import com.example.library_management_system.Enum.TransactionStatus;
 import jakarta.persistence.*;
 import lombok.*;
 import lombok.experimental.FieldDefaults;
@@ -9,11 +9,13 @@ import org.hibernate.annotations.CreationTimestamp;
 import java.util.Date;
 
 @Entity
+@Builder
 @FieldDefaults(level = AccessLevel.PRIVATE)
 @AllArgsConstructor
 @NoArgsConstructor
 @Getter
 @Setter
+@Table(name = "Transactions")
 public class Transaction {
 
     @Id
@@ -25,7 +27,7 @@ public class Transaction {
     @CreationTimestamp
     Date transactionTime;
 
-    TransationStatus transactionStatus;
+    TransactionStatus transactionStatus;
 
     @JoinColumn
      @ManyToOne
@@ -34,4 +36,6 @@ public class Transaction {
     @ManyToOne
     @JoinColumn
     LibraryCard libraryCard;
+
+
 }

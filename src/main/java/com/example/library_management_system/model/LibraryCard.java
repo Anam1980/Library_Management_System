@@ -16,6 +16,7 @@ import java.util.List;
 @AllArgsConstructor
 @Setter
 @Getter
+@Table(name = "LibraryCards")
 public class LibraryCard {
 
     @Id

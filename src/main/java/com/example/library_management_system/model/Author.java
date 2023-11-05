@@ -12,8 +12,10 @@ import java.util.List;
 @FieldDefaults(level = AccessLevel.PRIVATE)
 @Getter
 @Setter
+@Builder
 @NoArgsConstructor
 @AllArgsConstructor
+@Table(name= "Authors")
 public class Author {
 
     @Id
